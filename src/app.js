@@ -22,6 +22,10 @@ app.use(
   })
 );
 
+app.get('/', (req, res) => {
+  return res.send('URL Shortener API is live!');
+});
+
 app.use('/api', routes);
 
 module.exports = app;
